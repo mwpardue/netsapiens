@@ -9,21 +9,12 @@
                if ($this->Uiconfig->getUiConfig('PORTAL_TIPS_DISABLE_EMAIL_EDIT', '') == 'yes')
                {
                     $disableEmailEdit = "yes";
-                    // echo("<script>console.log('PHP User Email Edit first IF " . $disableEmailEdit . "');</script>");
                }
                elseif ($this->Uiconfig->getUiConfig('PORTAL_TIPS_DISABLE_EMAIL_EDIT_'.$this->Session->read('sub_reseller'), 'no') == 'yes')
                {
                     $disableEmailEdit = "yes";
-                    // echo("<script>console.log('PHP User Email Edit ELSEIF " . $disableEmailEdit . "');</script>");
                }
           }
-
-     // Logging, to be removed after completion of testing
-          // $dueeUI = $this->Uiconfig->getUiConfig('PORTAL_TIPS_DISABLE_EMAIL_EDIT', '');
-          // $dueeUIreseller = $this->Uiconfig->getUiConfig('PORTAL_TIPS_DISABLE_EMAIL_EDIT_'.$this->Session->read('sub_reseller'), '');
-          // echo("<script>console.log('PHP User Email Edit: " . $disableEmailEdit . "');</script>");
-          // echo("<script>console.log('DUEEUI: " . $dueeUI . "');</script>");
-          // echo("<script>console.log('DUEE Reseller UI: " . $dueeUIreseller . "');</script>");
 
      ?>
 
