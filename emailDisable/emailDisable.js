@@ -15,7 +15,7 @@
                });
           
                // Set configuration object for email delete button:
-               var profileEmailDeleteButtonConfig = { childList: true };
+               var profileEmailDeleteButtonConfig = { childList: true, characterData:true, subtree:true };
 
 
           // Create new observer to watch for Email Add button:
@@ -28,7 +28,7 @@
                });
           
                // Set configuration object for email add button:
-               var profileEmailAddButtonConfig = { childList: true };
+               var profileEmailAddButtonConfig = { childList: true, characterData:true, subtree:true };
 
 
           // Create new observer to watch for Email Address Fields:
@@ -41,7 +41,7 @@
                });
           
                // Set configuration object for email address fields:
-               var profileEmailAddressConfig = { childList: true };
+               var profileEmailAddressConfig = { childList: true, characterData:true, subtree:true };
 
 
           // Enable observers
